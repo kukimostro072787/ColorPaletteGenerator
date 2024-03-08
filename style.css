@@ -1,0 +1,114 @@
+body {
+  margin: auto;
+  background-color: #fbf0ff;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  color: #374151;
+  font-style: normal;
+}
+
+.main-container {
+  margin: 4rem 6rem; /* Ajusta para centrar el contenedor principal */
+  padding: 3rem;
+  background-color: #fffdfe;
+  border-radius: 20px;
+  box-shadow: #ebebeb -10px 10px 10px;
+  display: flex; /* Habilita Flexbox */
+  flex-direction: column; /* Alinea los elementos hijos verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+.main-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.piker-section {
+  box-shadow: 0px 3px 1px rgba(128, 128, 128, 0.251);
+  padding-bottom: 1rem;
+  align-items: center;
+  z-index: 1;
+}
+
+.piker-section,
+.grid-row {
+  width: 80%; /* O el ancho que prefieras */
+  margin: auto; /* Centra horizontalmente dentro de .main-container */
+  display: flex; /* Para .piker-section */
+  flex-wrap: nowrap; /* Para .piker-section */
+  justify-content: space-between; /* Para .piker-section */
+}
+
+.color-piker {
+  margin-left: 1rem;
+  height: 3rem;
+  width: 4rem;
+}
+
+.grid-row {
+  gap: 2rem;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Mantiene tus 5 columnas para .grid-row */
+  gap: 0px;
+  justify-content: center; /* Esto centra los elementos de la grilla en caso de que no ocupen todo el ancho */
+  text-align: center;
+}
+
+.labels {
+  cursor: pointer;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.grid-container {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre las filas del grid */
+}
+
+.grid-item {
+  background-color: lightblue; /* Solo para visualización */
+  text-align: center; /* Centra el texto dentro de los elementos del grid */
+  padding: 20px; /* Espaciado interno para los elementos del grid */
+}
+
+.select-option {
+  width: 40%;
+  float: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.2rem;
+  padding-right: 1rem;
+}
+.get-color-btn {
+  background-color: #fff;
+}
+
+.element-rds {
+  border-color: #d1d5db;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+}
+
+.get-color-btn {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 3rem;
+  border: 1px solid #d1d5db;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}

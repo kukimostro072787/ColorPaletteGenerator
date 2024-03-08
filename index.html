@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Color Scheme Generator</h1>
+
+        <div class="piker-section">
+            <!-- Contenedor para la primera fila con 3 columnas -->
+            <input type="color" id="colorPicker" name="color" class="color-piker">
+
+
+
+            <select class="select-option element-rds" id="select-option">
+                <option value="" disabled selected>Seleccione un esquema</option>
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+
+            </select>
+
+            <a class="get-color-btn element-rds" id="get-color-btn">Get color scheme</a>
+        </div>
+
+
+
+        <!-- Contenedor para la segunda fila con 5 columnas -->
+        <div class="grid-row" style="grid-template-columns: repeat(5, 1fr);" id="grid-row">
+
+
+        </div>
+        <!-- Contenedor para la tercera fila con 5 columnas para los labels -->
+        <div class="grid-row labels" style="grid-template-columns: repeat(5, 1fr);" id="grid-row-labels">
+
+
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.8.0/dist/pickr.min.js"></script>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
