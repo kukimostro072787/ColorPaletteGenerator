@@ -1,5 +1,7 @@
 body {
-  margin: auto;
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
   background-color: #fbf0ff;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
